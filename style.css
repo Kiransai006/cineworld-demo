@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #111;
+    color: white;
+}
+
+header {
+    height: 75px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #e50914;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #e50914;
+}
+
+.login-btn {
+    background: #e50914;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+    background:
+        linear-gradient(
+            90deg,
+            #000 20%,
+            rgba(0,0,0,0.7),
+            rgba(0,0,0,0.2)
+        ),
+        linear-gradient(135deg, #5c0000, #180000);
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    line-height: 1.6;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+.book-btn {
+    background: #e50914;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.movies {
+    padding: 70px 8%;
+}
+
+.movies h2,
+.cinemas h2,
+.offers h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.movie-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.movie-card {
+    width: 280px;
+    background: #1c1c1c;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.poster {
+    height: 350px;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+.poster h3 {
+    font-size: 25px;
+}
+
+.poster1 {
+    background: linear-gradient(135deg, #410000, #b30000);
+}
+
+.poster2 {
+    background: linear-gradient(135deg, #001b4d, #0080ff);
+}
+
+.poster3 {
+    background: linear-gradient(135deg, #292929, #777);
+}
+
+.movie-card > h3,
+.movie-card > p {
+    margin-left: 20px;
+}
+
+.movie-card h3 {
+    margin-top: 18px;
+}
+
+.movie-card p {
+    margin-top: 8px;
+    color: #aaa;
+}
+
+.movie-card button {
+    margin: 20px;
+    background: #e50914;
+    border: none;
+    padding: 11px 20px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cinemas {
+    background: #1c1c1c;
+    padding: 70px 8%;
+}
+
+.search-box {
+    display: flex;
+    max-width: 600px;
+    margin: auto;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 16px;
+    border: none;
+    font-size: 16px;
+}
+
+.search-box button {
+    padding: 16px 25px;
+    background: #e50914;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.offers {
+    padding: 70px 8%;
+}
+
+.offer-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.offer {
+    background: #1c1c1c;
+    width: 300px;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.offer h3 {
+    color: #e50914;
+    margin-bottom: 15px;
+}
+
+.offer p {
+    color: #ccc;
+    line-height: 1.5;
+}
+
+footer {
+    background: #000;
+    text-align: center;
+    padding: 40px;
+    color: #888;
+}
+
+footer .logo {
+    color: white;
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin: 8px;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 0 4%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero {
+        padding: 0 5%;
+    }
+}

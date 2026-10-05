@@ -1,0 +1,8 @@
+services:
+
+  cineworld:
+    image: kiransai006/cineworld-app:v1
+    container_name: cineworld-container
+    ports:
+      - "8080:80"
+    restart: unless-stopped
